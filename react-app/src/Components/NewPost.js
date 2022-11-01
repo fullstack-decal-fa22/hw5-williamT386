@@ -2,9 +2,9 @@ import { React, useState } from "react";
 import axios from "axios";
 
 const NewPost = (props) => {
-    const [id, setId] = useState();
-    const [title, setTitle] = useState();
-    const [body, setBody] = useState();
+    const [id, setId] = useState("");
+    const [title, setTitle] = useState("");
+    const [body, setBody] = useState("");
 
     const onSubmit = () => {
         console.log({
@@ -14,6 +14,9 @@ const NewPost = (props) => {
         })
 
         axios.post(props.url, { id: id, title: title, body: body }).then((response) => console.log(response));
+        setId("");
+        setTitle("");
+        setBody("");
     }
 
     return <div>
