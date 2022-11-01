@@ -29,7 +29,7 @@ const Feed = () => {
                 )
             }
 
-            {/* <NewPost __________ /> */}
+            <NewPost url="http://localhost:3002/posts" data='data' />
         </div>
     )
 
