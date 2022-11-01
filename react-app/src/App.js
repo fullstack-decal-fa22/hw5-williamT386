@@ -4,13 +4,13 @@ import Navbar from "./Components/Navbar";
 import Feed from "./Components/Feed";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar/>
-      <h1>Blockstagram</h1>
-      <Feed/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar />
+            <h1>Blockstagram</h1>
+            <Feed />
+        </div>
+    );
 }
 
 export default App;

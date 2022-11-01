@@ -13,7 +13,7 @@ const NewPost = (props) => {
             body
         })
 
-        axios.post(props.url, props.data).then((response) => console.log(response));
+        axios.post(props.url, { id: id, title: title, body: body }).then((response) => console.log(response));
     }
 
     return <div>
