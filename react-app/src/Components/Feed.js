@@ -30,7 +30,11 @@ const Feed = () => {
                 )
             }
 
-            <NewPost url="http://localhost:3002/post" />
+            <NewPost display={(in_data) => {
+                let tempList = [...data];
+                tempList.push(in_data);
+                setData(tempList);
+            }} />
         </div>
     )
 
